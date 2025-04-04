@@ -47,3 +47,13 @@ $
   (arcsin x)' & = 1 / (sec^2(arctan x))     \
               & = 1 / (tan^2(arctan x) + 1) \
               & = 1 / (1 + x^2) $
+
+= The antiderivative of $f(x)=sin^2 x$
+$ integral sin^2 x & = integral (1 - cos 2x) / 2 dif x                    \
+                   & = 1 / 2 integral dif x - 1 / 2 integral cos 2x dif x \
+                   & = x / 2 - (sin 2x) / 4 +C $
+
+= The antiderivative of $f(x)=cos^2 x$
+$ integral cos^2 x & = integral (cos 2x + 1) / 2 dif x                    \
+                   & = 1 / 2 integral dif x + 1 / 2 integral cos 2x dif x \
+                   & = x / 2 + (sin 2x) / 4 +C $
