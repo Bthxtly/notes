@@ -495,3 +495,58 @@ range of $g$, then
 $ integral_a^b f(g(x)) dot g'(x) dif x = integral_g(a)^g(b) f(u) dif u $
 
 = Applications of Definite Integrals
+// TODO: complete this section
+pass.
+
+= Integrals and Transcendental Functions
+
+== Definition of natural logarithm
+The *natural logarithm* is the function given by
+$ ln x = integral_1^x 1 / t dif t, #h(10pt) x > 0. $
+
+== The Integral $integral 1 / u dif u$
+If $u$ is a differentiable function that is never zero,
+$ integral 1 / u dif u = ln |u| + C. $
+If $u = f(x)$, then $dif u = f'(x) dif x$ and
+$ integral 1 / u dif u = integral (f'(x)) / f(x) dif x = ln |f(x)| + C. $
+
+== Definition of number $e$
+The *number $e$* is that number in the domain of the natural logarithm
+satisfying
+$ ln(e) = integral_1^e 1 / t dif t = 1. $
+In the limit form,
+$ e = lim_(x -> 0)(1 + x)^(1 / x) $
+
+== Definition of Logarithms with Base a
+For any positive number $a != 1$, $ log_a x "is the inverse function of" a^x $.
+
+== indeterminate Powers
+If $lim_(x->a) ln f(x) = L$, then
+$ lim_(a->a) f(x) = lim_(x->a) e^(ln f(x)) = e^L. $
+
+== Rates of Growth as $x->infinity$
+Let $f(x)$ and $g(x)$ be positive for $x$ sufficiently large.
++ #box([
+    $f$ *grows faster that* $g$ as $x->infinity$ if
+    $ lim_(x->infinity) f(x) / g(x) = infinity. $
+    or, equivalently, if
+    $ lim_(x->infinity) g(x) / f(x) = 0. $
+    We also say that $g$ *grows slower that* $f$ as $x->infinity$.
+  ])
++ #box([
+    $f$ and $g$ *grow at the same rate* as $x->infinity$ if
+    $ lim_(x->infinity) g(x) / f(x) = L $
+    where $L$ is finite and positive.
+  ])
+
+== Definition of Little-oh
+A function $f$ is *of smaller order than* $g$ as $x->infinity$ if
+$ lim_(x->infinity) f(x) / g(x) = 0. $
+We indicate this by writing *$f = o(g)$*("$f$ is little-oh of $g$")
+
+== Definition of Big-oh
+Let $f(x)$ and $g(x)$ be positive for $x$ sufficiently large. Then $f$ is *of
+at most the order of* $g$ as $x->infinity$ integer $M$ for which
+$ f(x) / g(x) <= M, $
+for $x$ sufficiently large. We indicate this by writing *$f = O(g)$*("$f$ is
+big-oh of $g$")

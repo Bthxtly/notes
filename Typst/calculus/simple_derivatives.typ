@@ -57,3 +57,14 @@ $ integral sin^2 x & = integral (1 - cos 2x) / 2 dif x                    \
 $ integral cos^2 x & = integral (cos 2x + 1) / 2 dif x                    \
                    & = 1 / 2 integral dif x + 1 / 2 integral cos 2x dif x \
                    & = x / 2 + (sin 2x) / 4 +C $
+
+= The integrals of $tan x$
+$ integral tan x dif x & = integral (sin x) / (cos x) dif x  \
+                       & = integral -(cos'x) / (cos x) dif x \
+                       & = -ln|cos x| + C                    \
+                       & = ln|sec x| + C $
+
+= The integrals of $cot x$
+$ integral cot x dif x & = integral (cos x) / (sin x) dif x \
+                       & = integral (sin'x) / (sin x) dif x \
+                       & = ln|sin x| + C $
